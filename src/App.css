@@ -1,42 +1,203 @@
+@import "tailwindcss";
+
+@keyframes show{
+    from{
+        opacity: 0; scale: 10%;
+    }
+    to {
+        opacity: 1;scale: 100%;
+    }
+}
+.btn-flotante {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+  color: #222;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  transition: background 0.2s, transform 0.2s;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/001/500/243/non_2x/arrow-upward-icon-free-vector.jpg");
+  background-size: cover;
+}
+.btn-flotante:hover {
+  transform: scale(1.1);
+}
+
+.divazo {
+  background-image: url('https://www.dragonballnoticias.com/wp-content/uploads/2017/11/32-2.png');
+  width: 97%;
+  grid-column: span 2; /* Ocupa dos columnas en el grid */
+  box-sizing: border-box;
+  border-radius: 1px;
+}
+.translucido{
+  background-color: rgba(255, 255, 255, 0.644);
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+
+.navazo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(122, 1, 70, 0.959);
+  padding: 5px 11px;
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+  border-radius: 0 0 8px 8px;
+}
+
+
+
 #root {
-  max-width: 1280px;
+  width: 100%;
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://i.pinimg.com/736x/9d/58/a2/9d58a2ae9b423208848d02dc81df99a4.jpg);
+  background-attachment: fixed;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr; /* La primera fila se ajusta al contenido */
+    gap: 8px; /* O usa un valor pequeño como 5px si quieres un poco de espacio */
+    background-color: rgba(114, 112, 101, 0.589);
+    margin-top: 4%;
+}
+
+
+.div1, .div2, .div4 {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.div1 {
+    text-align: center;
+    margin: 5% 0 8% 0;
+    grid-column: span 3 / span 3;
+    background-image: url('https://payhip.com/cdn-cgi/image/format=auto,width=1500/https://pe56d.s3.amazonaws.com/o_1f33q1qdr442dsn1iss949uf111.png');
+    background-attachment: fixed;
+    backdrop-filter: blur(1px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid  rgb(122, 1, 70);
+    
+}
+.div1tr{
+  background-color: rgba(0, 0, 0, 0.39);
+}
+
+
+.titulos{
+  font-weight: 700;
+  font-size: 90px;
+  color: black;
+}
+
+
+
+.fotoDerecha{
+  width: 90%;
+  margin: 0 0 5% 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  border-radius: 2%;
+  view-timeline-name: --reveal;
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+   animation-range: entry 5% cover 35%;
+}
+.fotoDerecha:hover {
+  transform: scale(1.09);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 2%;
+}
+
+p{
+  font-size: 20px;
+  font-weight: 500;
+  padding: 3%;
+  justify-self: center;
+  text-align: justify;
+  color: black;
+  
+}
+h3{
+  color: black;
+}
+h4{
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
   text-align: center;
+  margin-top: 20px;
+}
+ul {
+  padding-left: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  list-style: none;
+}
+li {
+  height: 12%;
+  width: 100%;
+  font-size: 20;
+  align-content: center;
+  transition: color 0.5s;
+  
+}
+li:hover {
+  color: #000000;
+  background-color: rgb(173, 153, 40);
+  transition: background 0.5s;
+  
+}
+.esfera {
+  width: 3%;
+  height: 3%;
+  border-radius: 10%;
+  margin-left: auto; /* Esto la lleva a la derecha */
+}
+.wikiTrunks{
+  width: 90%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.div2 {
+    grid-row-start: 2;
+    justify-items: center;
+    
+   
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+.div4 {
+    grid-row-start: 2;
+    justify-items: center;
+    
 
-.card {
-  padding: 2em;
 }
-
-.read-the-docs {
-  color: #888;
+        
+h3{
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 20px;
 }
