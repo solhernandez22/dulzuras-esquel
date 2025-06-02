@@ -6,7 +6,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  return (<h1>HOLA</h1>)
+  return (<h1>HOLA Sol</h1>)
 }
 
 export default App
