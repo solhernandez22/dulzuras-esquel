@@ -6,7 +6,7 @@ import Contact from './page/Contact.jsx'
 import Home from './page/Home.jsx'
 import Galeria from './page/Galeria.jsx'
 
-  
+
 
 
 
@@ -47,9 +47,8 @@ function App(){
         title="Ir arriba">
           
       </button>
-   </>
+  </>
   )
 }
-   
 
 export default App
