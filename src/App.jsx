@@ -13,7 +13,7 @@ import Galeria from './page/Galeria.jsx'
 
 function App(){
   return (
-   <>
+  <>
       <nav className='navazo'>
         <ul>
           <li>
