@@ -1,6 +1,6 @@
 function Home () {
   return (
-    <div>
+    <div classname= "undiv">
       <h1>Bienvenidos a Dulzuras Esquel</h1>
       <p>
         Descubre la magia de la repostería artesanal en el corazón de Esquel.

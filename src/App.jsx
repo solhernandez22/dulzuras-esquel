@@ -1,4 +1,3 @@
-
 import './App.css'
 import { Link, Routes, Route } from 'react-router'
 import About from './page/About.jsx'
