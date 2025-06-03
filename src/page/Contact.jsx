@@ -1,6 +1,10 @@
+import './Contacto.css'
+
+
+
 function Contact() {
   return (
-    <div>
+    <div className='contacto'>
       <h1>Contacto</h1>
       <p>
         Si tienes alguna pregunta o deseas realizar un pedido, no dudes en
