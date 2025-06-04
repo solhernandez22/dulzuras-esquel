@@ -30,7 +30,7 @@ function App(){
         </ul>
       </nav>
 
-      <div>
+      <div className='caja'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
