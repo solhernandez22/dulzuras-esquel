@@ -4,16 +4,26 @@ import About from './page/About.jsx'
 import Contact from './page/Contact.jsx'
 import Home from './page/Home.jsx'
 import Galeria from './page/Galeria.jsx'
-
-  
-
+import React, { useEffect, useState } from "react";
 
 
 
-function App(){
+
+function App() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
    <>
-      <nav className='navazo'>
+      <nav className={`navazo${scrolled ? " navazo-scrolled" : ""}`}>
+        <img src="https://dulzurasdeesquel.com.ar/wp-content/uploads/2025/01/logovio.png" className='dulz' />
         <ul>
           <li>
             <Link to="/">Inicio</Link>
@@ -29,8 +39,8 @@ function App(){
           </li>
         </ul>
       </nav>
-
-      <div className='caja'>
+      
+      <div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

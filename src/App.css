@@ -3,6 +3,7 @@
 #root {
   display: flex;
   width: 100%;
+  justify-content: center;
 }
 .caja{
   width: 100%;
@@ -10,40 +11,50 @@
   display: flex;
   justify-content: center;
 }
+.dulz{
+  height: 100%;
+  display: flex;
+}
 
 .navazo {
   position: fixed;
+  height: 8%;
   top: 0;
   left: 0;
   width: 100vw;
   z-index: 1000;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; /* Cambia a space-between */
   align-items: center;
-  background-color: rgba(235, 200, 104, 0.541);
+  background-color: rgba(138, 138, 138, 0.164);
   padding: 5px 11px;
-  box-shadow: 0 0 15px rgb(0, 0, 0);
+  transition: background 0.2s, height 0.2s;
+}
+.navazo-scrolled {
+  background-color: rgba(48, 48, 48, 0.603); /* Cambia el color al hacer scroll */
+  height: 55px; /* Ajusta la altura al hacer scroll */
 }
 ul {
-  padding-left: 30px;
+  padding-right: 13%;
   display: flex;
   justify-content: center;
-  gap: 5%;
+  gap: 35%;
+  margin: 0;
+  list-style: none;
 }
 li {
-  height: 12%;
+  height: 50px;
   width: 100%;
   font-size: 20;
   align-content: center;
-  transition: color 0.5s;
+  
   
 }
 li:hover {
   color: #000000;
-  background-color: rgb(173, 153, 40);
-  transition: background 0.5s;
-  
+  transition:  border-bottom 0.1s;
+  border-bottom: 4px solid #000; /* o el color que prefieras */
 }
 
 .btn-flotante {
