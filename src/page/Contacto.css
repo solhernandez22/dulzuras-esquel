@@ -1,4 +1,6 @@
 .fondou{
+    text-align: center;
+    justify-content: center;
     min-height: 100vh;
     width: 100vw;
     border-radius: 0;
@@ -7,13 +9,43 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     align-items: center;
     background-blend-mode: darken;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.616), rgba(0,0,0,0.4)),
+    background-image:linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.671)),
     url(https://laguiaesquel.com/wp-content/uploads/2020/10/dulzuras_de_esquel_esquel.jpg);
+    background-position: center;
 }
 
+.mapa-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 
+.mapa-link:hover { 
+    color: #ddbf5bb7;    
+    transform: scale(1.2); 
+    
+}
 
+.iconos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.iconos a {
+    transition: transform 0.3s, color 0.3s;
+    color: white;
+}
+
+.iconos a:hover {
+    transform: translateY(-8px) scale(1.2);
+    color: #97854bb7;
+}
 
