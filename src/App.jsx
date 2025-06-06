@@ -26,21 +26,21 @@ function App() {
         <img src="https://dulzurasdeesquel.com.ar/wp-content/uploads/2025/01/logovio.png" className='dulz' />
         <ul>
           <li>
-            <Link to="/">Inicio</Link>
+            <Link to="/">INICIO</Link>
           </li>
           <li>
-            <Link to="/about">Historia</Link>
+            <Link to="/about">HISTORIA</Link>
           </li>
           <li>
-            <Link to="/contact">Contacto</Link>
+            <Link to="/contact">CONTACTO</Link>
           </li>
           <li>
-            <Link to="/Galeria">campodetexto</Link>
+            <Link to="/Galeria">CAMPOTEXT</Link>
           </li>
         </ul>
       </nav>
       
-      <div>
+      <div className='eldiv'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

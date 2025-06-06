@@ -5,12 +5,7 @@
   width: 100%;
   justify-content: center;
 }
-.caja{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-}
+
 .dulz{
   height: 100%;
   display: flex;
@@ -18,7 +13,7 @@
 
 .navazo {
   position: fixed;
-  height: 8%;
+  height: 10%;
   top: 0;
   left: 0;
   width: 100vw;
@@ -27,35 +22,55 @@
   flex-wrap: wrap;
   justify-content: space-between; /* Cambia a space-between */
   align-items: center;
-  background-color: rgba(138, 138, 138, 0.164);
+  background-color: rgba(255, 255, 255, 0.753);
   padding: 5px 11px;
   transition: background 0.2s, height 0.2s;
 }
+
 .navazo-scrolled {
-  background-color: rgba(48, 48, 48, 0.603); /* Cambia el color al hacer scroll */
+  background-color: rgba(255, 255, 255, 0.438); /* Cambia el color al hacer scroll */
   height: 55px; /* Ajusta la altura al hacer scroll */
 }
 ul {
-  padding-right: 13%;
+  padding-right: 10%;
   display: flex;
   justify-content: center;
-  gap: 35%;
+  gap: 25%;
   margin: 0;
   list-style: none;
+  color: black;
 }
 li {
+  position: relative;
   height: 50px;
-  width: 100%;
-  font-size: 20;
+  font-size: 100%;
   align-content: center;
-  
-  
+  align-items: center;
 }
-li:hover {
-  color: #000000;
-  transition:  border-bottom 0.1s;
-  border-bottom: 4px solid #000; /* o el color que prefieras */
+
+
+.navazo li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #601583;
+  transform: scaleX(0);
+  transform-origin: bottom ;
+  transition: transform 0.4s ease;
 }
+
+.navazo li:hover::after {
+  transform: scaleX(1);
+}
+
+.navazo li:hover {
+  color: #601583;
+}
+
+
 
 .btn-flotante {
   position: fixed;
