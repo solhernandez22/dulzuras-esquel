@@ -1,12 +1,6 @@
 @import "tailwindcss";
 
-#root {
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 1rem;
-  
-}
+
 
 .navazo {
   position: fixed;

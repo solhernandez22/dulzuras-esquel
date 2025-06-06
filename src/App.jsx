@@ -23,7 +23,7 @@ function App(){
             <Link to="/about">Historia</Link>
           </li>
           <li>
-            <Link to="/contact">Contacto</Link>
+            <Link to="/contact">Contactanos</Link>
           </li>
           <li>
             <Link to="/Galeria">campodetexto</Link>
