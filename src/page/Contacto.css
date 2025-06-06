@@ -30,7 +30,7 @@
 }
 
 .mapa-link:hover { 
-    color: #ddbf5bb7;    
+    color: rgba(78, 52, 102, 0.966);    
     transform: scale(1.4); 
     
 }
@@ -39,7 +39,7 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 1px;
+    margin-top: 10%;
 }
 
 .redes a {
@@ -49,17 +49,17 @@
 
 .redes a:hover {
     transform: translateY(-8px) scale(1.2);
-    color: #214381b7;
+    color: rgba(78, 52, 102, 0.966);  
 }
 
 .reloj {display: flex;
     justify-content: center;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
 
 .texto {
-margin-top: 80px;
+margin-top: 5%;
 text-align: center;
 }
 
@@ -68,5 +68,12 @@ text-align: center;
     justify-content: center;
     gap: 10px;
     margin-top: 1px;
+}
 
+li:hover {
+    background: none !important;
+    color: inherit !important;
+    cursor: default !important;
+    filter: none !important;
+    transition: none !important;
 }

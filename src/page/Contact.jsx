@@ -49,13 +49,13 @@ function Contact() {
           <FaPhoneAlt style={{ verticalAlign: 'middle' }} />
           <span>
             Puedes llamarnos al <strong>(02945) 41-1673 </strong> o enviarnos un
-            correo electrónico a <strong>info@dulzurasdeesquel.com.ar</strong>
+            correo electrónico a <strong>info@dulzurasdeesquel.com.ar</strong> o 
           </span>
         </div>
       </div>
 
       
-        <h2>Seguinos en nuestras redes</h2>
+        <p><h2>seguinos en nuestras redes</h2>
         <div className="redes">
       <a href="https://www.facebook.com/dulzurasdeesquel" >    
       <FaFacebook size={40} />
@@ -64,17 +64,19 @@ function Contact() {
       <a href="https://www.instagram.com/dulzurasdeesquel/">
       <FaInstagram size={40} />
       </a>
-      </div>
+      </div></p>
       <p>⚞⸻⸻⸻⸻⸻⸻⸻⸻⸻⚟</p>
 
 
-      <h2>Nuestros horarios de atención</h2>
+      <h2>Estamos abiertos todos los días de la semana para que puedas disfrutar de nuestros productos en el momento que más te convenga.</h2>
       <div className="reloj">
         <GoClock size={25}/>
       </div>
 
+    
   <li>Lunes a Sabado 09:00 a 21:00</li>
   <li>Domingo 10:00 a 13:30, 16:00 a 20:30</li>
+
 
 ⸻⸻⸻⸻⸻⸻⸻
     </div>
