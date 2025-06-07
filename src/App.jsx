@@ -5,6 +5,7 @@ import Contact from './page/Contact.jsx'
 import Home from './page/Home.jsx'
 import Galeria from './page/Galeria.jsx'
 import React, { useEffect, useState } from "react";
+import { FaAngleDoubleUp } from "react-icons/fa";
 
 
 
@@ -29,13 +30,13 @@ function App() {
             <Link to="/">INICIO</Link>
           </li>
           <li>
-            <Link to="/about">HISTORIA</Link>
-          </li>
-          <li>
-            <Link to="/contact">CONTACTO</Link>
+            <Link to="/about">CAFETERIA</Link>
           </li>
           <li>
             <Link to="/Galeria">CAMPOTEXT</Link>
+          </li>
+          <li>
+            <Link to="/contact">CONTACTO</Link>
           </li>
         </ul>
       </nav>
@@ -50,12 +51,12 @@ function App() {
       </div>
     
     
-      <button
+      <div className='boton'><button
         className="btn-flotante"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        title="Ir arriba">
+        title="Ir arriba"><FaAngleDoubleUp size={25}/>
           
-      </button>
+      </button></div>
    </>
   )
 }

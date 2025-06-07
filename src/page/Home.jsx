@@ -5,6 +5,7 @@ import './Home.css';
 
 
 
+
 function Home () {
   return (
     
@@ -32,17 +33,30 @@ function Home () {
             </div>
           </div>
         </div>
-        <div className="div3">3</div>
         <div className="div4">
           <div className='oscu4'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellat exercitationem voluptatum aut quos facilis, optio sed eligendi iste accusantium quibusdam porro aliquam accusamus vitae sequi corrupti maxime cum quod.
+          
           </div>
         </div>
         
-        <div className="div5">5</div>
-        <div className="div6">6</div>
-        <div className="div7">7</div>
-        <div className="div8">8</div>
+        <div className="div3">
+          <div className='div3p1'>
+            <div className='div3p2'>
+             <h1 className='h1div3'>Nuestros productos</h1>
+              <p className='pdiv3'>La cafetería ofrece un variado menú con exquisiteses dulces y saladas. Productos artesanales de elaboración propia</p>
+              
+            </div>
+        
+          
+        </div>
+        </div>
+        <div className="div4">
+          <div className='oscu4'>
+            <a href="About.jsx"> <button>Ver Carta</button></a>
+            <a href="Contact.jsx"> <button>Contactanos</button></a>
+          </div>
+        </div>
+        
       </div>
     
   );
