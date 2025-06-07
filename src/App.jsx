@@ -1,37 +1,47 @@
-
 import './App.css'
 import { Link, Routes, Route } from 'react-router'
 import About from './page/About.jsx'
 import Contact from './page/Contact.jsx'
 import Home from './page/Home.jsx'
 import Galeria from './page/Galeria.jsx'
+import React, { useEffect, useState } from "react";
+import { FaAngleDoubleUp } from "react-icons/fa";
 
 
 
 
+function App() {
+  const [scrolled, setScrolled] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-function App(){
   return (
-  <>
-      <nav className='navazo'>
+   <>
+      <nav className={`navazo${scrolled ? " navazo-scrolled" : ""}`}>
+        <img src="https://dulzurasdeesquel.com.ar/wp-content/uploads/2025/01/logovio.png" className='dulz' />
         <ul>
           <li>
-            <Link to="/">Inicio</Link>
+            <Link to="/">INICIO</Link>
           </li>
           <li>
-            <Link to="/about">Historia</Link>
+            <Link to="/about">CAFETERIA</Link>
           </li>
           <li>
-            <Link to="/contact">Contacto</Link>
+            <Link to="/Galeria">CAMPOTEXT</Link>
           </li>
           <li>
-            <Link to="/Galeria">campodetexto</Link>
+            <Link to="/contact">CONTACTO</Link>
           </li>
         </ul>
       </nav>
-
-      <div>
+      
+      <div className='eldiv'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -41,13 +51,13 @@ function App(){
       </div>
     
     
-      <button
+      <div className='boton'><button
         className="btn-flotante"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        title="Ir arriba">
+        title="Ir arriba"><FaAngleDoubleUp size={25}/>
           
-      </button>
-  </>
+      </button></div>
+   </>
   )
 }
 
