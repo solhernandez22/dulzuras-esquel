@@ -1,40 +1,73 @@
 @import "tailwindcss";
 
+#root {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 
+.dulz {
+  height: 100%;
+  display: flex;
+}
 
 .navazo {
   position: fixed;
+  height: 10%;
   top: 0;
   left: 0;
   width: 100vw;
   z-index: 1000;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; /* Cambia a space-between */
   align-items: center;
-  background-color: rgba(235, 200, 104, 0.541);
   padding: 5px 11px;
-  box-shadow: 0 0 15px rgb(0, 0, 0);
+  transition: background 0.2s, height 0.2s;
 }
+
+.navazo-scrolled {
+  background-color: rgba(128, 127, 127, 0.788); /* Cambia el color al hacer scroll */
+  height: 55px; /* Ajusta la altura al hacer scroll */
+}
+
 ul {
-  padding-left: 30px;
+  padding-right: 10%;
   display: flex;
   justify-content: center;
-  gap: 5%;
+  gap: 25%;
+  margin: 0;
+  list-style: none;
+  color: rgb(255, 255, 255);
 }
+
 li {
-  height: 12%;
-  width: 100%;
-  font-size: 20;
+  position: relative;
+  height: 50px;
+  font-size: 100%;
   align-content: center;
-  transition: color 0.5s;
-  
+  align-items: center;
 }
-li:hover {
-  color: #000000;
-  background-color: rgb(173, 153, 40);
-  transition: background 0.5s;
-  
+
+.navazo li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #733591;
+  transform: scaleX(0);
+  transform-origin: bottom;
+  transition: transform 0.4s ease;
+}
+
+.navazo li:hover::after {
+  transform: scaleX(1);
+}
+
+.navazo li:hover {
+  color: #733591;
 }
 
 .btn-flotante {
@@ -44,11 +77,13 @@ li:hover {
   width: 55px;
   height: 55px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-  transition:  0.2s, transform 0.2s;
+  transition: 0.2s, transform 0.2s;
 }
+
 .btn-flotante:hover {
   transform: scale(1.1);
 }
+
 .btn-flotante:active {
   transform: scale(0.9);
 }

@@ -1,0 +1,200 @@
+.parent {
+    display:block;
+    gap: 8px;
+    width: 100%;
+    height: 70%;
+}
+
+.undiv {
+  height: 100%; /* Ajusta este valor a la altura real de tu imagen */ 
+  background-image: url(https://laguiaesquel.com/wp-content/uploads/2020/10/dulzuras_de_esquel_esquel.jpg);
+  background-repeat: repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+.oscurecedor{
+  height: 100%; /* Ajusta este valor a la altura real de tu imagen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.774);
+}
+
+.div2{
+    width: 100%;
+    height: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+
+.div2p1{
+    width: 97%;
+    height: 92%;
+    background-image: url(https://dulzurasdeesquel.com.ar/wp-content/uploads/2024/12/slider_3-1-1536x1075.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.div2p2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(67, 21, 110, 0.377);
+    backdrop-filter: blur(5px);
+    display:inline-flex;
+    justify-content: center;     /* Centra verticalmente */
+    align-items: center;         /* Centra horizontalmente */
+    text-align: justify;
+    gap: 1%;                   /* Espacio entre h1 y p */
+}
+
+.div3{
+    width: 100%;
+    height: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+.div3p1{
+    width: 97%;
+    height: 92%;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/003/322/177/non_2x/top-view-white-chocolate-round-cake-free-photo.jpg);
+    background-size:contain;
+    background-position: 26%;
+    text-align: center;
+}
+.div3p2 {
+    width: 100%;
+    height: 100%;
+     background: linear-gradient(
+    to bottom,
+    rgba(178, 143, 211, 0.288) 0%,
+    rgba(115, 44, 182, 0.685) 100%
+    
+  );
+    backdrop-filter: blur(5px);
+    display:inline-flex;
+    justify-content: center;     /* Centra verticalmente */
+    align-items: center;         /* Centra horizontalmente */
+    text-align: justify;
+    gap: 1%;                   /* Espacio entre h1 y p */
+}
+
+.div4{
+    width: 100%;
+    height: 45%;
+    background-image: url(https://laguiaesquel.com/wp-content/uploads/2020/10/dulzuras_de_esquel_esquel.jpg);
+    background-repeat: repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    
+}
+.oscu4{
+    height: 100%; /* Ajusta este valor a la altura real de tu imagen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.774);
+    gap: 2%;
+}
+
+.oscu4 button {
+  color: #000;
+}
+
+.div5{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(143, 119, 49);
+}
+.div6{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(109, 90, 37);
+}
+
+.pdiv{
+    text-align: justify;
+      /* Agranda la fuente */
+    color: #fff;
+    margin: 2px;
+    width: 40%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.h1div {
+    width: 50%;
+    color: #fff;
+    font-size: 370%;
+    font-weight: bold;
+}
+/* -------------------------*/
+.pdiv3{
+    text-align: justify;   
+    color: #fff;
+    margin: 2px;
+    width: 40%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+}
+.h1div3 {
+    width: 50%;
+    color: #fff;
+    font-size: 518%;
+    font-weight: bold;
+}
+
+/* From Uiverse.io by barisdogansutcu */ 
+button {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  color: #000;
+}
+
+button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+button:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
