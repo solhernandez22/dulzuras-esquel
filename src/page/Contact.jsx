@@ -11,7 +11,7 @@ function Contact() {
   return (
     <div className="fondou">
       <div>
-        <h1>INFORMACION DE CONTACTO</h1>
+        <h1 className='h1div'>INFORMACION DE CONTACTO</h1>
         <div className='cafe'>
         ⚞⸻⸻⸻⸻<PiCoffeeFill size={25} />⸻⸻⸻⸻⚟
         </div>
