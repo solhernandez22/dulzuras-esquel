@@ -1,0 +1,46 @@
+.fondop {
+  height: 100%; /* Ajusta este valor a la altura real de tu imagen */ 
+  background-image: url(https://laguiaesquel.com/wp-content/uploads/2020/10/dulzuras_de_esquel_esquel.jpg);
+  background-repeat: repeat;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+.oscup{
+  height: 100%; /* Ajusta este valor a la altura real de tu imagen */
+  background-color: rgba(0, 0, 0, 0.774);
+}
+
+.titl{
+  height: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15%;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta el tamaño mínimo de las tarjetas */
+    gap: 10px; /* Espacio entre las tarjetas */
+    width: 100%;
+    margin-top: 17%;
+
+}
+
+.productos {
+  width: 100%;            /* 4 productos caben con espacio */
+  background-color: rgba(129, 129, 129, 0.658);
+  text-align: justify;
+  justify-self: center; 
+  
+}
+.productos p {
+  width: 90%;            /* 4 productos caben con espacio */
+  text-align: justify;
+  justify-self: center;
+}
+.productos img {
+  width: 100%;
+
+}

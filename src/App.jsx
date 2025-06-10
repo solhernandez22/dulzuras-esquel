@@ -3,7 +3,7 @@ import { Link, Routes, Route } from 'react-router'
 import About from './page/About.jsx'
 import Contact from './page/Contact.jsx'
 import Home from './page/Home.jsx'
-import Galeria from './page/Galeria.jsx'
+import Galeria from './page/Productos.jsx'
 import React, { useEffect, useState } from "react";
 import { FaAngleDoubleUp } from "react-icons/fa";
 
@@ -33,7 +33,7 @@ function App() {
             <Link to="/about">CAFETERIA</Link>
           </li>
           <li>
-            <Link to="/Galeria">CAMPOTEXT</Link>
+            <Link to="/Productos">PRODUCTOS</Link>
           </li>
           <li>
             <Link to="/contact">CONTACTO</Link>
@@ -46,7 +46,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/Galeria" element={<Galeria />} />
+          <Route path="/Productos" element={<Galeria />} />
         </Routes>
       </div>
     
