@@ -15,9 +15,13 @@
     background-blend-mode: darken;
     background-image:linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.671)),
     url(https://laguiaesquel.com/wp-content/uploads/2020/10/dulzuras_de_esquel_esquel.jpg);
-    background-position: 55%;
+    background-position: 50%;
 
 
+}
+.fondpad{
+    padding-top: 5%;
+    justify-items: center;
 }
 
 .mapa-link {

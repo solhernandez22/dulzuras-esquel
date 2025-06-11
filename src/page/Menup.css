@@ -8,7 +8,11 @@
 
 .oscup{
   height: 100%; /* Ajusta este valor a la altura real de tu imagen */
-  background-color: rgba(0, 0, 0, 0.774);
+  width: 100%;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.87);
+  justify-content: center;
+  justify-items: center;
 }
 
 .titl{
@@ -21,26 +25,53 @@
 
 .contenedor {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta el tamaño mínimo de las tarjetas */
-    gap: 10px; /* Espacio entre las tarjetas */
-    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); /* Ajusta el tamaño mínimo de las tarjetas */
+    gap: 1.5%; /* Espacio entre las tarjetas */
+    width: 96%;
     margin-top: 17%;
+    margin-bottom: 23%;
 
 }
 
 .productos {
-  width: 100%;            /* 4 productos caben con espacio */
-  background-color: rgba(129, 129, 129, 0.658);
+  width: 100%;
+  background-color: rgb(255, 255, 255);
   text-align: justify;
-  justify-self: center; 
-  
+  justify-self: center;
+  border: solid 0px rgb(153, 153, 153);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 1%;
+  display: block;
 }
+
+.productos:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.301);
+}
+
 .productos p {
+  color: black;
   width: 90%;            /* 4 productos caben con espacio */
   text-align: justify;
   justify-self: center;
 }
+.productos h2{
+  color : black;
+  width: 90%;            /* 4 productos caben con espacio */
+  line-height: 110%;
+  text-align: left;
+  justify-self: center;
+  font-size: 150%;
+  padding-bottom: 5%;
+}
 .productos img {
   width: 100%;
-
+  border-radius: 1% 1%  0% 0%;
+}
+.p2 {
+  
+  margin-top: 18px; /* Ajusta el valor según el espacio que desees */
+  text-align: right; /* Si quieres alinearlo a la derecha */
+  
+  
 }

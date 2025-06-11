@@ -41,8 +41,8 @@ function Home () {
       </div>
       <div className="div4">
         <div className='oscu4'>
-          <a href="About.jsx"> <button>Ver Carta</button></a>
-          <a href="Contact.jsx"> <button>Contactanos</button></a>
+          <a href="About"> <button>Ver Carta</button></a>
+          <a href="Contact"> <button>Contactanos</button></a>
         </div>
       </div>
     </div>
