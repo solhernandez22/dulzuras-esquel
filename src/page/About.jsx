@@ -14,6 +14,7 @@ function About() {
             <img src={item.Image} alt={item.Name} width={150} />
             <h3>{item.Name}</h3>
             <p>{item.Description}</p>
+            <p>{item.Price}</p>
           </div>
           </div>
         ))}
