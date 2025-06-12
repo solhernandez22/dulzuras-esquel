@@ -6,7 +6,7 @@ function About() {
     <div className="fondo">
       
       <h1 className='titulo'>Nuestro Menú</h1>
-      <h2>Bebidas Calientes</h2>
+      <h2 className='titulo-menu'>Bebidas Calientes</h2>
       <div className='comida'>
         {menu.filter(item => item.Category === 'Bebidas Calientes').map((item, idx) => (
           <div className='tarjeta' key={idx}>
@@ -17,7 +17,7 @@ function About() {
           </div>
         ))}
       </div>
-      <h2>Bebidas Frías</h2>
+      <h2 className='titulo-menu'>Bebidas Frías</h2>
       <div className='comida'>
         {menu.filter(item => item.Category === 'Bebidas Frías').map((item, idx) => (
           <div className='tarjeta' key={idx}>
@@ -28,7 +28,7 @@ function About() {
           </div>
         ))}
       </div>
-            <h2>Pasteleria</h2>
+            <h2 className='titulo-menu'>Pasteleria</h2>
       <div className='comida'>
         {menu.filter(item => item.Category === 'Pasteleria').map((item, idx) => (
           <div className='tarjeta' key={idx}>
