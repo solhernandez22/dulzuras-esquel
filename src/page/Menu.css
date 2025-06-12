@@ -9,7 +9,6 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    
     font-size:large;
     align-items: center;
     background-blend-mode: darken;
@@ -18,10 +17,15 @@
     background-position: 55%;
 }
 
-
+h2{
+    font-size: 250%;
+    color: #faf1f1;
+    text-shadow: 2px 2px 5px rgba(106, 62, 187, 0.849);
+    margin-top: 5%;
+}
 
 .titulo{
-    font-size: 300%;
+    font-size: 390%;
     color: #ffffff;
     text-shadow: 2px 2px 5px rgba(214, 206, 200, 0.849);
     margin-bottom: 1rem;
@@ -34,27 +38,47 @@
     width: 100%;
     max-width: 1200px;
     margin-top: 7%;
+    background-color: rgba(250, 235, 215, 0.13);
+    backdrop-filter:blur(5px) ;
+    padding: 2.5%;
+    border-radius: 5px;
 }
 
 .tarjeta{
-background-color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0.567);
     color: rgb(0, 0, 0);
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.253);
-    transition: transform 0.6s ease in-out, box-shadow 0.6s ease-in-out;
+    transition: transform 0.2s ease , box-shadow 0.2s ease;
 border-radius: 1%;
 
 }	
 .tarjeta:hover{
-    transform: translateY(-12px);    
-    box-shadow: 0 8px 20px rgba(255, 241, 241, 0.596);
+    transform: translateY(-5px);    
+    box-shadow: 0 8px 24px rgba(255, 241, 241, 0.596);
 }
 .tarjeta img{
-    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 190px;
     object-fit: cover;
 }
+.tarjeta h3{
+    color: #000000;    
+    width: 90%;
+    line-height: 110%;
+    text-align: left;
+    justify-self: center;    
+    font-size: 150%;
+    padding-bottom: 5%;
+}
+
+.tarjeta p{
+    color: #000000;
+    width: 90%;
+    text-align: justify;
+    justify-self: center;
+}
+
 
 
 
