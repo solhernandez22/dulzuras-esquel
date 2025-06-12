@@ -1,4 +1,4 @@
-import { menu } from '../menu.js';
+import { menu } from '../COMPONENTES/Menu.js';
 import './Menu.css'
 
 function About() {
