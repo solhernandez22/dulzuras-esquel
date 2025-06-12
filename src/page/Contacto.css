@@ -13,14 +13,16 @@
     font-size:large;
     align-items: center;
     background-blend-mode: darken;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.671)),
+    background-image:linear-gradient(rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.719)),
     url(https://laguiaesquel.com/wp-content/uploads/2020/10/dulzuras_de_esquel_esquel.jpg);
-    background-position: 50%;
+    background-size:contain;
+    
+    background-attachment: fixed;
 
 
 }
 .fondpad{
-    padding-top: 5%;
+    padding-top: 15%;
     justify-items: center;
 }
 
