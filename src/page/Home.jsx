@@ -28,7 +28,11 @@ function Home () {
         </div>
       </div>
       <div className="div4">
-        <div className='oscu4'>
+       <div className='oscurecedor2'>
+          <h1 className='h1div2'>Las Dulzuras de Esquel</h1>
+          <p className='pdiv2'>
+            Esquel, más allá de sus paisajes, deleita con sus dulzuras. Chocolates artesanales y mermeladas de frutos finos te esperan. ¡Un sabor patagónico imperdible!
+          </p>
         </div>
       </div>
       <div className="div3">
