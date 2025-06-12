@@ -2,21 +2,89 @@
     text-align: center;
     justify-content: center;
     min-height: 100vh;
-    width: 99.9vw;
+    width: 98.9vw;
     border-radius: 0;
     box-shadow: none;
     padding: 2rem;
     margin: 0;
     display: flex;
     flex-direction: column;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size:large;
     align-items: center;
     background-blend-mode: darken;
+<<<<<<< HEAD
     background-image:linear-gradient(rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.719)),
+=======
+    background-image:linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+>>>>>>> 319b95dd5388a3da26f9be2ddac510c2a19e98e3
     url(https://laguiaesquel.com/wp-content/uploads/2020/10/dulzuras_de_esquel_esquel.jpg);
     background-position: 55%;
 }
   
     
+
+h2{
+    font-size: 250%;
+    color: #faf1f1;
+    text-shadow: 2px 2px 5px rgba(106, 62, 187, 0.849);
+    margin-top: 5%;
+}
+
+.titulo{
+    font-size: 390%;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(214, 206, 200, 0.849);
+    margin-bottom: 1rem;
+    margin-top: 5%;
+}
+
+.comida{display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 7%;
+    background-color: rgba(250, 235, 215, 0.13);
+    backdrop-filter:blur(5px) ;
+    padding: 2.5%;
+    border-radius: 5px;
+}
+
+.tarjeta{
+background-color: rgba(255, 255, 255, 0.567);
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.253);
+    transition: transform 0.2s ease , box-shadow 0.2s ease;
+border-radius: 1%;
+
+}	
+.tarjeta:hover{
+    transform: translateY(-5px);    
+    box-shadow: 0 8px 24px rgba(255, 241, 241, 0.596);
+}
+.tarjeta img{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+.tarjeta h3{
+    color: #000000;    
+    width: 90%;
+    line-height: 110%;
+    text-align: left;
+    justify-self: center;    
+    font-size: 150%;
+    padding-bottom: 5%;
+}
+
+.tarjeta p{
+    color: #000000;
+    width: 90%;
+    text-align: justify;
+    justify-self: center;
+}
+
+
+
 

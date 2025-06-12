@@ -1,14 +1,20 @@
+<<<<<<< HEAD
 import './App.css'
 import { Link, Routes, Route } from 'react-router'
 import About from './page/About.jsx'
 import Contact from './page/Contact.jsx'
 import Home from './page/Home.jsx'
 import Galeria from './page/Productos.jsx'
+=======
+import './App.css';
+import { Link, Routes, Route } from 'react-router';
+>>>>>>> 319b95dd5388a3da26f9be2ddac510c2a19e98e3
 import React, { useEffect, useState } from "react";
 import { FaAngleDoubleUp } from "react-icons/fa";
-
-
-
+import About from './page/About.jsx';
+import Contact from './page/Contact.jsx';
+import Home from './page/Home.jsx';
+import Galeria from './page/Galeria.jsx';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -22,9 +28,13 @@ function App() {
   }, []);
 
   return (
-   <>
+    <>
       <nav className={`navazo${scrolled ? " navazo-scrolled" : ""}`}>
-        <img src="https://dulzurasdeesquel.com.ar/wp-content/uploads/2025/01/logovio.png" className='dulz' />
+        <img
+          src="https://dulzurasdeesquel.com.ar/wp-content/uploads/2025/01/logovio.png"
+          className='dulz'
+          alt="Logo Dulzuras de Esquel"
+        />
         <ul>
           <li>
             <Link to="/">INICIO</Link>
@@ -40,7 +50,7 @@ function App() {
           </li>
         </ul>
       </nav>
-      
+
       <div className='eldiv'>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -49,16 +59,18 @@ function App() {
           <Route path="/Productos" element={<Galeria />} />
         </Routes>
       </div>
-    
-    
-      <div className='boton'><button
-        className="btn-flotante"
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        title="Ir arriba"><FaAngleDoubleUp size={25}/>
-          
-      </button></div>
-   </>
-  )
+
+      <div className='boton'>
+        <button
+          className="btn-flotante"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          title="Ir arriba"
+        >
+          <FaAngleDoubleUp size={25} />
+        </button>
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;
