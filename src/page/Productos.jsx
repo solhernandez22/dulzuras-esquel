@@ -1,4 +1,4 @@
-import { menup } from '../menup.js';
+import { menup } from '../COMPONENTES/menup.js';
 import './Menup.css'
 
 

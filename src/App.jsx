@@ -1,20 +1,11 @@
-<<<<<<< HEAD
-import './App.css'
-import { Link, Routes, Route } from 'react-router'
-import About from './page/About.jsx'
-import Contact from './page/Contact.jsx'
-import Home from './page/Home.jsx'
-import Galeria from './page/Productos.jsx'
-=======
 import './App.css';
 import { Link, Routes, Route } from 'react-router';
->>>>>>> 319b95dd5388a3da26f9be2ddac510c2a19e98e3
 import React, { useEffect, useState } from "react";
 import { FaAngleDoubleUp } from "react-icons/fa";
 import About from './page/About.jsx';
 import Contact from './page/Contact.jsx';
 import Home from './page/Home.jsx';
-import Galeria from './page/Galeria.jsx';
+import Galeria from './page/Productos.jsx';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);

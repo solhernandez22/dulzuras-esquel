@@ -10,11 +10,7 @@ import { GoClock } from "react-icons/go";
 function Contact() {
   return (
     <div className="fondou">
-<<<<<<< HEAD
       <div className='fondpad'>
-=======
-      <div>
->>>>>>> 319b95dd5388a3da26f9be2ddac510c2a19e98e3
         <h1 className='h1div'>INFORMACION DE CONTACTO</h1>
         <div className='cafe'>
         ⚞⸻⸻⸻⸻<PiCoffeeFill size={25} />⸻⸻⸻⸻⚟
@@ -59,7 +55,7 @@ function Contact() {
       </div>
 
       
-        <p><h2>seguinos en nuestras redes</h2>
+        <p> <h2>seguinos en nuestras redes</h2>
         <div className="redes">
       <a href="https://www.facebook.com/dulzurasdeesquel" >    
       <FaFacebook size={40} />
