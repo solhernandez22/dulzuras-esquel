@@ -10,10 +10,12 @@ import { GoClock } from "react-icons/go";
 function Contact() {
   return (
     <div className="fondou">
+      <div className='blury'>
       <div className='fondpad'>
+        
         <h1 className='h1div'>INFORMACION DE CONTACTO</h1>
         <div className='cafe'>
-        ⚞⸻⸻⸻⸻<PiCoffeeFill size={25} />⸻⸻⸻⸻⚟
+        ⚞⸻⸻<PiCoffeeFill size={25} />⸻⸻⚟
         </div>
         <div className='texto'>
         <p>
@@ -45,12 +47,12 @@ function Contact() {
           ></iframe>
         </div>
         
-        <div className='texto' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', flexWrap: 'wrap', textAlign: 'left' }}>
+        <div className='texto' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', flexWrap: 'wrap', textAlign: 'center' }}>
           <FaPhoneAlt style={{ verticalAlign: 'middle' }} />
-          <span>
+          <p>
             Puedes llamarnos al <strong>(02945) 41-1673 </strong> o enviarnos un
             correo electrónico a <strong>info@dulzurasdeesquel.com.ar</strong> o 
-          </span>
+          </p>
         </div>
       </div>
 
@@ -65,7 +67,7 @@ function Contact() {
       <FaInstagram size={40} />
       </a>
       </div></p>
-      <p>⚞⸻⸻⸻⸻⸻⸻⸻⸻⸻⚟</p>
+      <p>⚞⸻⸻⸻⸻⚟</p>
 
 
       <h2>Estamos abiertos todos los días de la semana para que puedas disfrutar de nuestros productos en el momento que más te convenga.</h2>
@@ -78,9 +80,9 @@ function Contact() {
   <li>Domingo 10:00 a 13:30, 16:00 a 20:30</li>
 
 
-⸻⸻⸻⸻⸻⸻⸻
+⸻⸻⸻⸻⸻⸻
     </div>
-    
+    </div>
   )
 }
 

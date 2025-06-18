@@ -79,3 +79,48 @@
   
   
 }
+
+/* Responsive para Productos (Menup.css) */
+@media (max-width: 1100px) {
+  .contenedor {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    padding: 2vw 1vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    padding: 2vw 1vw;
+    width: 90%;
+  }
+  .productos {
+    font-size: 0.98rem;
+    padding: 12px 6px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contenedor {
+    width: 90%;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 2vw 0.5vw;
+    height: 95%;
+  }
+  .productos {
+    font-size: 0.95rem;
+    padding: 10px 2px;
+    width: 90%;
+  }
+  .productos img {
+    width: 100%;
+    height: auto;
+  }
+  .fondop {
+    height: 110%;
+  }
+}
