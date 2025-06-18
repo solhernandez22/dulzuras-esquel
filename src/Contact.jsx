@@ -7,6 +7,7 @@ import { PiCoffeeFill } from "react-icons/pi";
 import { GoClock } from "react-icons/go";
 
 
+
 function Contact() {
   return (
     <div className="fondou">
@@ -47,10 +48,10 @@ function Contact() {
         
         <div className='texto' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', flexWrap: 'wrap', textAlign: 'left' }}>
           <FaPhoneAlt style={{ verticalAlign: 'middle' }} />
-          <span>
+
             Puedes llamarnos al <strong>(02945) 41-1673 </strong> o enviarnos un
             correo electrónico a <strong>info@dulzurasdeesquel.com.ar</strong> o 
-          </span>
+
         </div>
       </div>
 

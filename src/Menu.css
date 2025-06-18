@@ -20,10 +20,12 @@
 
 
 .titulo-menu{
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 250%;
     color: #faf1f1;
-    text-shadow: 2px 2px 5px rgba(106, 62, 187, 0.849);
+    text-shadow: 2px 2px 5px rgba(71, 36, 135, 0.849);
     margin-top: 5%;
+    margin-bottom:0%;
 }
 
 .titulo{
@@ -34,20 +36,21 @@
     margin-top: 5%;
 }
 
-.comida{display: grid;
+.comida{ 
+    background-color: rgba(250, 235, 215, 0.13);
+    backdrop-filter:blur(5px);
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     width: 100%;
-    max-width: 1200px;
     margin-top: 7%;
-    background-color: rgba(250, 235, 215, 0.13);
-    backdrop-filter:blur(5px) ;
     padding: 2.5%;
     border-radius: 5px;
+    max-width: 1200px;    
 }
 
 .tarjeta{
-background-color: rgba(255, 255, 255, 0.567);
+background-color: rgba(255, 255, 255);
     color: rgb(0, 0, 0);
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.253);
@@ -57,7 +60,7 @@ border-radius: 1%;
 }	
 .tarjeta:hover{
     transform: translateY(-5px);    
-    box-shadow: 0 8px 24px rgba(255, 241, 241, 0.596);
+    box-shadow: 0 8px 24px rgba(255, 241, 241, 0.301);
 }
 .tarjeta img{
     width: 100%;

@@ -83,3 +83,8 @@ li:hover {
     filter: none !important;
     transition: none !important;
 }
+
+@media screen and (max-width: 900px) {
+
+    
+}

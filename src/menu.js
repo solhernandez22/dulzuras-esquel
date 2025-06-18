@@ -10,21 +10,21 @@ export const menu = [
       {
     Image: 'https://ninina.com/cdn/shop/products/NININA3-2820.jpg?v=1605717671&width=360',
     Name: 'Lungo',
-    Description: 'Café lungo con un sabor más suave, ideal para disfrutar lentamente.',
+    Description: 'Un shot de café espresso + agua, ideal para disfrutar lentamente.',
     Price:'3.500',
     Category: 'Bebidas Calientes',
   }, 
       {
     Image: 'https://ninina.com/cdn/shop/products/NININA3-2814.jpg?v=1605717582&width=360',
     Name: 'Primera dama',
-    Description: 'Café con leche cremoso, ideal para comenzar el día con energía.',
+    Description: 'Un shot de café espresso + 20 ml de leche texturizada, ideal para comenzar el día con energía.',
     Price:'3.500',
     Category: 'Bebidas Calientes',
   }, 
       {
     Image: 'https://ninina.com/cdn/shop/products/NININA3-2827.jpg?v=1605717746&width=360',
     Name: 'Espresso doble',
-    Description: 'Dos shots de espresso para un impulso extra de cafeína.',
+    Description: 'Dos shots de café espresso para un impulso extra de cafeína.',
     Price:'4.500',
     Category: 'Bebidas Calientes',
 
@@ -32,7 +32,7 @@ export const menu = [
   {
     Image: 'https://ninina.com/cdn/shop/products/NININA3-2823.jpg?v=1605717700&width=360',
     Name: 'Americano',
-    Description: 'Café americano con un sabor más suave, ideal para disfrutar en cualquier momento.',
+    Description: 'Dos shots de café espresso + agua, ideal para disfrutar en cualquier momento.',
     Price:'4.500',
     Category: 'Bebidas Calientes',
 
@@ -56,14 +56,14 @@ export const menu = [
     {
     Image: 'https://ninina.com/cdn/shop/products/NININA3-2802.jpg?v=1605717379&width=360',
     Name: 'Latte',
-    Description: 'Café latte con un toque de suavidad, ideal para disfrutar en cualquier momento.',
+    Description: 'Dos shots de café espresso + 190 ml de leche texturizada, ideal para disfrutar en cualquier momento.',
     Price:'2.500',
     Category: 'Bebidas Calientes',
   }, 
     {
     Image: 'https://ninina.com/cdn/shop/products/NININA3-2800.jpg?v=1605717322&width=493',
     Name:'Caramel latte',
-    Description: 'Café latte con un toque de caramelo, ideal para los amantes de lo dulce.',
+    Description: 'Dos shots de café espresso + 170 ml de leche texturizada + caramelo casero.',
     Price:'2.500',
         Category: 'Bebidas Calientes',
   },
