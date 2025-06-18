@@ -17,6 +17,7 @@
     url(https://laguiaesquel.com/wp-content/uploads/2020/10/dulzuras_de_esquel_esquel.jpg);
     background-size:contain;
     
+    
     background-attachment: fixed;
 
 
@@ -24,6 +25,12 @@
 .fondpad{
     padding-top: 15%;
     justify-items: center;
+    
+}
+.blury{
+  backdrop-filter: blur(5px);
+  width: 110%;
+  height: 100%;
 }
 
 .mapa-link {
@@ -84,7 +91,34 @@ li:hover {
     transition: none !important;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
+  .contact-container, .contacto, .formulario, .datos-contacto {
+    width: 100% !important;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 0 2vw;
+  }
+  .formulario, .datos-contacto {
+    margin: 0 auto 18px auto;
+    float: none;
+  }
+  .contacto {
+    flex-direction: column !important;
+    display: flex !important;
+    align-items: stretch !important;
+    gap: 1.5rem;
+  }
+}
 
-    
+@media (max-width: 600px) {
+  .contact-container, .contacto, .formulario, .datos-contacto {
+    padding: 0 1vw;
+  }
+  .formulario input, .formulario textarea, .formulario button {
+    width: 100% !important;
+    font-size: 1rem;
+  }
+  .datos-contacto {
+    font-size: 0.98rem;
+  }
 }

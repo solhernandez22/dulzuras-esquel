@@ -10,9 +10,9 @@ import Galeria from './Productos.jsx';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
-  const [busqueda, setBusqueda] = useState("");
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [busqueda, setBusqueda] = useState("");
   const location = useLocation(); 
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +27,17 @@ function App() {
 
   return (
     <>
-      <nav className={`navazo${scrolled ? " navazo-scrolled" : ""}`}>
+      {/* Botón hamburguesa solo visible en móvil */}
+      <button
+        className="btn-hamburguesa"
+        onClick={() => setSidebarOpen(true)}
+        aria-label="Abrir menú"
+      >
+        &#9776;
+      </button>
+
+      {/* Header normal (oculto en móvil) */}
+      <header className={`navazo${scrolled ? " navazo-scrolled" : ""}`}>
         <img
           src="https://dulzurasdeesquel.com.ar/wp-content/uploads/2025/01/logovio.png"
           className='dulz'
@@ -45,13 +55,46 @@ function App() {
             />
           </div>
         )}
+
+
+
+
         <ul>
-          <li><Link to="/">INICIO</Link></li>
-          <li><Link to="/about">CAFETERIA</Link></li>
-          <li><Link to="/Productos">PRODUCTOS</Link></li>
-          <li><Link to="/contact">CONTACTO</Link></li>
+          <li>
+            <Link to="/">INICIO</Link>
+          </li>
+          <li>
+            <Link to="/about">CAFETERIA</Link>
+          </li>
+          <li>
+            <Link to="/Productos">PRODUCTOS</Link>
+          </li>
+          <li>
+            <Link to="/contact">CONTACTO</Link>
+          </li>
         </ul>
-      </nav>
+      </header>
+
+      {/* Sidebar lateral para móvil */}
+      {sidebarOpen && (
+        <nav className="sidebar">
+          <button className="close" onClick={() => setSidebarOpen(false)} aria-label="Cerrar menú">×</button>
+          <ul>
+            <li>
+              <Link to="/" onClick={() => setSidebarOpen(false)}>INICIO</Link>
+            </li>
+            <li>
+              <Link to="/about" onClick={() => setSidebarOpen(false)}>CAFETERIA</Link>
+            </li>
+            <li>
+              <Link to="/Productos" onClick={() => setSidebarOpen(false)}>PRODUCTOS</Link>
+            </li>
+            <li>
+              <Link to="/contact" onClick={() => setSidebarOpen(false)}>CONTACTO</Link>
+            </li>
+          </ul>
+        </nav>
+      )}
 
       <div className='eldiv'>
         <Routes>

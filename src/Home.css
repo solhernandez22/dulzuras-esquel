@@ -205,6 +205,74 @@ button:active {
   transition: 100ms;
 }
 
+/* Responsive para Home.jsx */
+@media (max-width: 900px) {
+  
+  .h1div, .h1div2, .h1div3 {
+    font-size: 2rem !important;
+    text-align: center;
+    width: 60%;
+  }
+  .undiv{
+    height: 70%;
+    
+  }
+
+  .div2{
+    height: 82%;
+    width: 100%;
+  }
+  .div2p1{
+    width: 95%;
+    height: 98%;
+  }
+
+  .oscurecedor2 {
+    padding-top: 25%;
+    font-size: 1.2rem;
+  }
+
+  .div3 {
+    height: 35%;
+    width: 100%;
+  }
+  .div3p1 {
+    width: 97%;
+    height: 96%;
+  }
+
+  
+  .pdiv, .pdiv2, .pdiv3 {
+    font-size: 1rem !important;
+    width: 95%;
+    text-align: justify;
+    padding-right: 2%;
+  }
+  .oscu4 {
+    flex-direction: column !important;
+    gap: 1rem;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .oscu4 button {
+    width: 90vw;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .h1div, .h1div2, .h1div3 {
+    font-size: 1.3rem !important;
+  }
+  .pdiv, .pdiv2, .pdiv3 {
+    font-size: 0.95rem !important;
+  }
+  .oscu4 button {
+    width: 100%;
+    max-width: none;
+  }
+}
+
 
 
 
