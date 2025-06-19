@@ -2,10 +2,10 @@ import './App.css';
 import { Link, Routes, Route, useLocation } from 'react-router';
 import React, { useEffect, useState } from "react";
 import { FaAngleDoubleUp } from "react-icons/fa";
-import About from './About.jsx';
-import Contact from './Contact.jsx';
-import Home from './Home.jsx';
-import Galeria from './Productos.jsx';
+import About from './page/About.jsx';
+import Contact from './page/Contact.jsx';
+import Home from './page/Home.jsx';
+import Galeria from './page/Productos.jsx';
 
 
 function App() {

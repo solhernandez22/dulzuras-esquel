@@ -1,4 +1,4 @@
-import { menu } from './menu.js';
+import { menu } from '../COMPONENTES/menu.js';
 import './Menu.css';
 import './busqueda.css';
 

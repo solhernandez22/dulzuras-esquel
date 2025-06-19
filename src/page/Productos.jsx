@@ -1,4 +1,4 @@
-import { menup } from './menup.js';
+import { menup } from '../COMPONENTES/menup.js';
 import './Menup.css';
 import './busqueda.css';
 
@@ -19,7 +19,6 @@ function Galeria({ busqueda = "" }) {
             Aquí encontrarás una variedad de delicias hechas con amor y dedicación.
           </p>
         </div>
-        <h2 className='titulo-menu'><strong>Galería de Productos</strong></h2>
         <h2 className='titulo-menu'>Chocolates</h2>
         <div className='contenedor'>
         {filtrar('Chocolates').map((item, idx) => (
@@ -28,7 +27,7 @@ function Galeria({ busqueda = "" }) {
                 <img src={item.Image} alt={item.Name} width={150} />
                 <h2>{item.Name}</h2>
                 <p>{item.Description}</p>
-                <p className='p2'>{"Precio:  " + item.Price}</p>
+                <p className='p2'>{"Precio: $" + item.Price}</p>
 
             </div>
           ))}
