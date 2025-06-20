@@ -40,7 +40,7 @@ function Galeria({ busqueda = "" }) {
                 <img src={item.Image} alt={item.Name} width={150} />
                 <h2>{item.Name}</h2>
                 <p>{item.Description}</p>
-                <p className='p2'>{"Precio:  " + item.Price}</p>
+                <p className='p2'>{"Precio: $" + item.Price}</p>
 
             </div>
           ))}
