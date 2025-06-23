@@ -20,7 +20,7 @@ function Galeria({ busqueda = "" }) {
           </p>
         </div>
         <h2 className='titulo-menu'>Chocolates</h2>
-        <div className='contenedor'>
+        <div className='contenedor1'>
         {filtrar('Chocolates').map((item, idx) => (
             <div className='productos' key={idx}>
 
@@ -33,7 +33,7 @@ function Galeria({ busqueda = "" }) {
           ))}
         </div>
         <h2  className='titulo-menu'>Pasteleria</h2>
-                <div className='contenedor'>
+                <div className='contenedor2'>
         {filtrar('Pasteleriaa').map((item, idx) => (
             <div className='productos' key={idx}>
 
@@ -46,7 +46,7 @@ function Galeria({ busqueda = "" }) {
           ))}
         </div>
         <h2  className='titulo-menu'>Sin Tacc</h2>
-                <div className='contenedor'>
+                <div className='contenedor3'>
         {filtrar('Sin Tacc').map((item, idx) => (
             <div className='productos' key={idx}>
 

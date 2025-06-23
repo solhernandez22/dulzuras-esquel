@@ -5,8 +5,8 @@ function Home () {
     <div className="parent">
       <div className="undiv">
         <div className='oscurecedor'>
-          <h1 className='h1div'>Productos destacados para cada ocasión</h1>
-          <p className='pdiv'>
+          <h1 className='h1dive'>Productos destacados para cada ocasión</h1>
+          <p className='pdive'>
             Descubre la magia de la repostería artesanal en el corazón de Esquel.
             Aquí encontrarás una variedad de delicias hechas con amor y dedicación.
           </p>

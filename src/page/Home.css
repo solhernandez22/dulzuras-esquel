@@ -26,7 +26,7 @@
 
 .div2{
     width: 100%;
-    height: 75%;
+    height: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,6 +139,27 @@
 .oscu4 button {
   color: #000;
 }
+
+
+.h1dive {
+    margin: 2px;
+    width: 48%;
+    color: #fff;
+    font-size: 370%;
+    font-weight: bold;
+}
+.pdive{
+    text-align: justify;
+      /* Agranda la fuente */
+    color: #fff;
+    margin: 2px;
+    width: 45%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
 
 .pdiv{
     text-align: justify;
@@ -271,6 +292,48 @@ button:active {
     width: 100%;
     max-width: none;
   }
+  .oscurecedor{
+    height: 100%; /* Ajusta este valor a la altura real de tu imagen */
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.719);
+    
+  }
+
+  .h1dive {
+    text-align: center;
+    
+    color: #fff;
+    font-size: 280%;
+    font-weight: bold;
+  } 
+  .pdive{
+    text-align: justify;
+    color: #fff;
+   
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+
+
+.undiv, .oscurecedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: justify;
+  
+}
+.h1dive, .pdive {
+  display: block;
+  backdrop-filter: blur(3px);
+  width: 100%;
+  padding: 0% 6% 0 6%;
+  
+}
+
 }
 
 
