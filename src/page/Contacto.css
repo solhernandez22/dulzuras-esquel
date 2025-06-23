@@ -29,8 +29,8 @@
 }
 .blury{
   backdrop-filter: blur(5px);
-  width: 110%;
-  height: 100%;
+  width: 105%;
+  height: 110%;
 }
 
 .mapa-link {
@@ -72,6 +72,8 @@
 }
 
 .texto {
+  margin-left: 5%;
+  margin-right: 5%;
 margin-top: 5%;
 text-align: center;
 }
