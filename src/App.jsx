@@ -118,15 +118,15 @@ function App() {
         </Routes>
       </div>
 
-      <div className='boton'>
-        <button
+      
+        <div
           className="btn-flotante"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           title="Ir arriba"
         >
           <FaAngleDoubleUp size={25} />
-        </button>
-      </div>
+        </div>
+      
     </>
   );
 }
