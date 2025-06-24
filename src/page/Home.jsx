@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import './Home.css';
 
 function Home () {
@@ -45,8 +46,8 @@ function Home () {
       </div>
       <div className="div4">
         <div className='oscu4'>
-          <a href="/about"> <button>Ver Carta</button></a>
-          <a href="/contact"> <button>Contactanos</button></a>
+          <Link to="/about"> <button>Ver Carta</button></Link>
+          <Link to="/contact"> <button>Contactanos</button></Link>
         </div>
       </div>
     </div>
