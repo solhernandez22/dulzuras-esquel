@@ -67,7 +67,7 @@ li {
   bottom: 0;
   height: 3px;
   width: 100%;
-  background: #733591;
+  background: #b09dba;
   transform: scaleX(0);
   transform-origin: bottom;
   transition: transform 0.4s ease;
@@ -91,10 +91,10 @@ li {
   right: 1%;
   width: 55px;
   height: 55px;
-  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.784);
+  box-shadow: 1px 2px 10px 5px rgba(255, 255, 255, 0.185);
   transition: 0.2s, transform 0.2s;
-  background-color: #9a80b1;
-  color: black;
+  background-color: #321975b6;
+  color: white;
 }
 
 .btn-flotante:hover {
@@ -133,7 +133,7 @@ li {
     cursor: pointer;
     
   }
- 
+  
   .sidebar {
     position: fixed;
     top: 0; left: 0;
@@ -146,8 +146,16 @@ li {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    animation: slideIn 0.2s;
+    /* La animación se aplicará dinámicamente en React,
+       pero si el componente se monta, por defecto usará slideIn */
+    animation: slideIn 0.2s forwards; /* Animación para abrir */
   }
+
+  /* Nueva clase para la animación de cierre */
+  .sidebar.closing {
+    animation: slideOut 0.2s forwards; /* Animación para cerrar */
+  }
+
   .sidebar .close {
     align-self: flex-end;
     font-size: 180%;
@@ -172,17 +180,19 @@ li {
   .btn-hamburguesa, .sidebar { display: none !important; }
 }
 
+/* Animación de apertura (ya existente) */
 @keyframes slideIn {
   from { transform: translateX(-100%);}
   to { transform: translateX(0);}
 }
-/*comentario hola*/
-/* ...tus estilos existentes arriba... */
 
+/* Nueva animación para el cierre (de izquierda a derecha, pero "saliendo") */
+@keyframes slideOut {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); } /* Mueve fuera de la pantalla a la izquierda */
+}
 
-
-/* ...tus estilos existentes arriba... */
-
+/* ...tus estilos existentes para .topbar-responsive y .btn-flotante... */
 /* Topbar responsive: hamburguesa + búsqueda */
 .topbar-responsive {
   display: none;
@@ -213,7 +223,6 @@ li {
     position: fixed;
     top: 1%;
     right: 8%;
-    
     color: white;
     background: none;
     border: none;
@@ -230,10 +239,11 @@ li {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    animation: slideIn 0.2s;
+    /* La animación de apertura ya está definida directamente en .sidebar arriba */
+    /* La animación de cierre se aplicará con la clase .closing */
   }
 
-   .sidebar li {
+    .sidebar li {
     font-size: 1.2rem;
     color: white;
     padding: 0% 0 0% 3%;
@@ -243,7 +253,7 @@ li {
     
     align-self: center; /* Alinea la imagen a la izquierda */
     margin: 22% 0 15% 0% ;   /* Solo margen abajo */
-    width: 70%;           /* Ajusta el tamaño según tu imagen */
+    width: 70%;            /* Ajusta el tamaño según tu imagen */
     height: auto;
     display: block;
     z-index: 1;
@@ -253,7 +263,7 @@ li {
   align-items: center;
   gap: 8px;
 }
- 
+  
 .btn-flotante:hover {
   transform: none;
 }
@@ -263,16 +273,8 @@ li {
   right: 4%;
   width: 40px;
   height: 40px;
-  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.784);
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.486);
+  background-color: #321975b6;
   
 }
-}
-
-
-@keyframes slideIn {
-  from { transform: translateX(-100%);}
-  to { transform: translateX(0);}
-}
-  
-
-
+} /* Cierre de la media query max-width: 900px */
