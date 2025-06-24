@@ -6,6 +6,10 @@ import About from './page/About.jsx';
 import Contact from './page/Contact.jsx';
 import Home from './page/Home.jsx';
 import Galeria from './page/Productos.jsx';
+import { TiHome } from "react-icons/ti";
+import { PiCoffeeFill } from "react-icons/pi";
+import { GiChocolateBar } from "react-icons/gi";
+import { MdLocationPin } from "react-icons/md";
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -24,13 +28,13 @@ function App() {
     <>
       {/* Topbar responsive: hamburguesa + búsqueda */}
       <div className="topbar-responsive">
-        <button
+        <div
           className="btn-hamburguesa"
           onClick={() => setSidebarOpen(true)}
           aria-label="Abrir menú"
         >
           &#9776;
-        </button>
+        </div>
         <input
           placeholder="Buscar producto..."
           type="search"
@@ -68,19 +72,31 @@ function App() {
         <nav className="sidebar">
           <button className="close" onClick={() => setSidebarOpen(false)} aria-label="Cerrar menú">×</button>
           <ul>
-            <li>
-              <Link to="/" onClick={() => setSidebarOpen(false)}>INICIO</Link>
-            </li>
-            <li>
-              <Link to="/about" onClick={() => setSidebarOpen(false)}>CAFETERIA</Link>
-            </li>
-            <li>
-              <Link to="/Productos" onClick={() => setSidebarOpen(false)}>PRODUCTOS</Link>
-            </li>
-            <li>
-              <Link to="/contact" onClick={() => setSidebarOpen(false)}>CONTACTO</Link>
-            </li>
-          </ul>
+  <li>
+    <Link to="/" onClick={() => setSidebarOpen(false)}>
+      <TiHome style={{ marginRight: "8px" }} />
+      INICIO
+    </Link>
+  </li>
+  <li>
+    <Link to="/about" onClick={() => setSidebarOpen(false)}>
+      <PiCoffeeFill style={{ marginRight: "8px" }} />
+      CAFETERIA
+    </Link>
+  </li>
+  <li>
+    <Link to="/Productos" onClick={() => setSidebarOpen(false)}>
+      <GiChocolateBar style={{ marginRight: "8px" }} />
+      PRODUCTOS
+    </Link>
+  </li>
+  <li>
+    <Link to="/contact" onClick={() => setSidebarOpen(false)}>
+      <MdLocationPin style={{ marginRight: "8px" }} />
+      CONTACTO
+    </Link>
+  </li>
+</ul>
         </nav>
       )}
 
