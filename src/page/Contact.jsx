@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { PiCoffeeFill } from "react-icons/pi";
 import { GoClock } from "react-icons/go";
-
+import ReservaForm from '../COMPONENTES/reservaform';
 
 
 function Contact() {
@@ -82,6 +82,7 @@ function Contact() {
 
 
 ⸻⸻⸻⸻⸻⸻
+    <ReservaForm />
     </div>
     </div>
   )
