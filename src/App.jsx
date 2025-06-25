@@ -67,6 +67,7 @@ function App() {
           <li>
             <Link to="/contact">CONTACTO</Link>
           </li>
+
         </ul>
       </header>
 
@@ -115,6 +116,7 @@ function App() {
           <Route path="/about" element={<About busqueda={busqueda} />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/Productos" element={<Galeria busqueda={busqueda} />} />
+
         </Routes>
       </div>
 
