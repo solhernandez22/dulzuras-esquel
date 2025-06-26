@@ -1,7 +1,10 @@
 export const ReservaForm = () => {
   return (
     <div className="flex items-center justify-center p-12">
-      <div className="mx-auto w-full max-w-[550px]">
+      <div
+        className="mx-auto  bg-white"
+        style={{ width: "70%", borderRadius: "5px", padding: "5%  3% 5% 3%" }}
+      >
         <form action="https://formbold.com/s/FORM_ID" method="POST">
           <div className="-mx-3 flex flex-wrap">
             <div className="w-full px-3 sm:w-1/2">
@@ -10,13 +13,13 @@ export const ReservaForm = () => {
                   htmlFor="fName"
                   className="mb-3 block text-base font-medium text-[#07074D]"
                 >
-                  First Name
+                  Nombre
                 </label>
                 <input
                   type="text"
                   name="fName"
                   id="fName"
-                  placeholder="First Name"
+                  placeholder="Nombre"
                   className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 />
               </div>
@@ -27,13 +30,13 @@ export const ReservaForm = () => {
                   htmlFor="lName"
                   className="mb-3 block text-base font-medium text-[#07074D]"
                 >
-                  Last Name
+                  Apellido
                 </label>
                 <input
                   type="text"
                   name="lName"
                   id="lName"
-                  placeholder="Last Name"
+                  placeholder="Apellido"
                   className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 />
               </div>
@@ -44,7 +47,7 @@ export const ReservaForm = () => {
               htmlFor="guest"
               className="mb-3 block text-base font-medium text-[#07074D]"
             >
-              How many guest are you bringing?
+              Numero de personas
             </label>
             <input
               type="number"
@@ -63,7 +66,7 @@ export const ReservaForm = () => {
                   htmlFor="date"
                   className="mb-3 block text-base font-medium text-[#07074D]"
                 >
-                  Date
+                  Fecha
                 </label>
                 <input
                   type="date"
@@ -79,7 +82,7 @@ export const ReservaForm = () => {
                   htmlFor="time"
                   className="mb-3 block text-base font-medium text-[#07074D]"
                 >
-                  Time
+                  Hora
                 </label>
                 <input
                   type="time"
@@ -91,47 +94,11 @@ export const ReservaForm = () => {
             </div>
           </div>
 
-          <div className="mb-5">
-            <label className="mb-3 block text-base font-medium text-[#07074D]">
-              Are you coming to the event?
-            </label>
-            <div className="flex items-center space-x-6">
-              <div className="flex items-center">
-                <input
-                  type="radio"
-                  name="radio1"
-                  id="radioButton1"
-                  className="h-5 w-5"
-                />
-                <label
-                  htmlFor="radioButton1"
-                  className="pl-3 text-base font-medium text-[#07074D]"
-                >
-                  Yes
-                </label>
-              </div>
-              <div className="flex items-center">
-                <input
-                  type="radio"
-                  name="radio1"
-                  id="radioButton2"
-                  className="h-5 w-5"
-                />
-                <label
-                  htmlFor="radioButton2"
-                  className="pl-3 text-base font-medium text-[#07074D]"
-                >
-                  No
-                </label>
-              </div>
-            </div>
-          </div>
-
           <div>
             <button
               className="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none"
             >
-              Submit
+              Enviar
             </button>
           </div>
         </form>

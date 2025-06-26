@@ -6,7 +6,7 @@
  position: relative;
 
  justify-content: flex-start; /* Alinea el contenido a la izquierda */
- margin-right: auto;          /* Empuja el resto del contenido a la derecha */
+ margin-right: auto;          /* Empuja el resto del contenido a la derecha s*/
 }
 
 .input {

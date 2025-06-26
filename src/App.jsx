@@ -10,6 +10,9 @@ import { TiHome } from "react-icons/ti";
 import { PiCoffeeFill } from "react-icons/pi";
 import { GiChocolateBar } from "react-icons/gi";
 import { MdLocationPin } from "react-icons/md";
+import { LuPanelLeftClose } from "react-icons/lu";
+
+
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -70,33 +73,39 @@ function App() {
       {/* Sidebar lateral para móvil */}
       {sidebarOpen && (
         <nav className="sidebar">
-          <button className="close" onClick={() => setSidebarOpen(false)} aria-label="Cerrar menú">×</button>
-          <ul>
-  <li>
-    <Link to="/" onClick={() => setSidebarOpen(false)}>
-      <TiHome style={{ marginRight: "8px" }} />
-      INICIO
-    </Link>
-  </li>
-  <li>
-    <Link to="/about" onClick={() => setSidebarOpen(false)}>
-      <PiCoffeeFill style={{ marginRight: "8px" }} />
-      CAFETERIA
-    </Link>
-  </li>
-  <li>
-    <Link to="/Productos" onClick={() => setSidebarOpen(false)}>
-      <GiChocolateBar style={{ marginRight: "8px" }} />
-      PRODUCTOS
-    </Link>
-  </li>
-  <li>
-    <Link to="/contact" onClick={() => setSidebarOpen(false)}>
-      <MdLocationPin style={{ marginRight: "8px" }} />
-      CONTACTO
-    </Link>
-  </li>
-</ul>
+          <div className="close" onClick={() => setSidebarOpen(false)} aria-label="Cerrar menú"><LuPanelLeftClose />
+            </div><img
+                  src="https://dulzurasdeesquel.com.ar/wp-content/uploads/2025/01/logovio.png"
+                  className='dulz'
+                  alt="Logo Dulzuras de Esquel"
+                />
+               <ul>
+                  <li>
+                    <Link to="/" onClick={() => setSidebarOpen(false)}>
+                      <TiHome style={{ marginRight: "8px" }} />
+                      INICIO
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/about" onClick={() => setSidebarOpen(false)}>
+                      <PiCoffeeFill style={{ marginRight: "8px" }} />
+                      CAFETERIA
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/Productos" onClick={() => setSidebarOpen(false)}>
+                      <GiChocolateBar style={{ marginRight: "8px" }} />
+                      PRODUCTOS
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/contact" onClick={() => setSidebarOpen(false)}>
+                      <MdLocationPin style={{ marginRight: "8px" }} />
+                      CONTACTO
+                    </Link>
+                  </li>
+              </ul>
+              
         </nav>
       )}
 
@@ -109,15 +118,15 @@ function App() {
         </Routes>
       </div>
 
-      <div className='boton'>
-        <button
+      
+        <div
           className="btn-flotante"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           title="Ir arriba"
         >
           <FaAngleDoubleUp size={25} />
-        </button>
-      </div>
+        </div>
+      
     </>
   );
 }

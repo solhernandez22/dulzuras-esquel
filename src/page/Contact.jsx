@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { PiCoffeeFill } from "react-icons/pi";
 import { GoClock } from "react-icons/go";
-import ReservaForm from '../COMPONENTES/reservaform';
+import {ReservaForm} from '../COMPONENTES/reservaform';
 
 
 function Contact() {
@@ -13,7 +13,9 @@ function Contact() {
     <div className="fondou">
       <div className='blury'>
       <div className='fondpad'>
-        
+        <h1 className='h1div'>Reservas</h1>
+        ⚞⸻⸻<PiCoffeeFill size={25} />⸻⸻⚟
+        <ReservaForm />
         <h1 className='h1div'>INFORMACION DE CONTACTO</h1>
         <div className='cafe'>
         ⚞⸻⸻<PiCoffeeFill size={25} />⸻⸻⚟
@@ -82,7 +84,7 @@ function Contact() {
 
 
 ⸻⸻⸻⸻⸻⸻
-    <ReservaForm />
+  
     </div>
     </div>
   )
