@@ -14,7 +14,7 @@ function Contact() {
       <div className='blury'>
       <div className='fondpad'>
         <h1 className='h1div'>Reservas</h1>
-        ⚞⸻⸻<PiCoffeeFill size={25} />⸻⸻⚟
+        ⸻⸻<PiCoffeeFill size={25} />⸻⸻
         <ReservaForm />
         <h1 className='h1div'>INFORMACION DE CONTACTO</h1>
         <div className='cafe'>
