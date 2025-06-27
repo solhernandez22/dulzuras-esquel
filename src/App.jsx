@@ -1,5 +1,5 @@
 import './App.css';
-import { Link, Routes, Route } from 'react-router';
+import { Link, Routes, Route, useLocation } from 'react-router';
 import React, { useEffect, useState } from "react";
 import { FaAngleDoubleUp } from "react-icons/fa";
 import About from './page/About.jsx';
@@ -18,6 +18,12 @@ function App() {
   const [scrolled, setScrolled] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [busqueda, setBusqueda] = useState("");
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
