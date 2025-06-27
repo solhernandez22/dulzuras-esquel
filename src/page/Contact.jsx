@@ -14,11 +14,19 @@ function Contact() {
       <div className='blury'>
       <div className='fondpad'>
         <h1 className='h1div'>Reservas</h1>
-        ⸻⸻<PiCoffeeFill size={25} />⸻⸻
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '16px 0' }}>
+  <hr />
+  ⸻⸻⸻<PiCoffeeFill size={25} />⸻⸻⸻
+  <hr />
+</div>
         <ReservaForm />
         <h1 className='h1div'>INFORMACION DE CONTACTO</h1>
         <div className='cafe'>
-        ⚞⸻⸻<PiCoffeeFill size={25} />⸻⸻⚟
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '16px 0' }}>
+  <hr/>
+⸻⸻⸻ <PiCoffeeFill size={25} />⸻⸻⸻
+  <hr/>
+</div>
         </div>
         <div className='texto'>
         <p>
@@ -70,7 +78,7 @@ function Contact() {
       <FaInstagram size={40} />
       </a>
       </div></p>
-      <p>⚞⸻⸻⸻⸻⚟</p>
+      <p>⸻⸻⸻⸻⸻⸻</p>
 
 
       <h2>Estamos abiertos todos los días de la semana para que puedas disfrutar de nuestros productos en el momento que más te convenga.</h2>

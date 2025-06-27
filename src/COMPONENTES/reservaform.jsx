@@ -2,8 +2,8 @@ export const ReservaForm = () => {
   return (
     <div className="flex items-center justify-center p-12">
       <div
-        className="mx-auto  bg-white"
-        style={{ width: "70%", borderRadius: "5px", padding: "5%  3% 5% 3%" }}
+        className="mx-auto  bg-violet-300"
+        style={{ width: "100%", borderRadius: "5px", padding: "5%  3% 5% 3%" }}
       >
         <form action="https://formbold.com/s/FORM_ID" method="POST">
           <div className="-mx-3 flex flex-wrap">
